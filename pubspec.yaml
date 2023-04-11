@@ -1,0 +1,72 @@
+name: responsive_app
+description: is responsive app
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+
+dependencies:
+  cupertino_icons: ^1.0.5
+  auto_route: ^5.0.4
+  flutter:
+    sdk: flutter
+  flutter_hooks: ^0.18.6
+  responsive_framework: ^0.2.0
+  flutter_localizations:
+    sdk: flutter
+  flutter_svg: ^2.0.3
+  freezed_annotation: ^2.2.0
+  hooks_riverpod: ^2.3.1
+  json_annotation: ^4.8.0
+  fl_chart: ^0.61.0
+
+dev_dependencies:
+  auto_route_generator: ^5.0.3
+  build_runner: ^2.3.3
+  flutter_gen_runner: ^5.2.0
+  flutter_native_splash: ^2.2.19
+  flutter_test:
+    sdk: flutter
+  freezed: ^2.3.2
+  json_serializable: ^6.6.1
+  lint: ^2.0.1
+
+flutter_gen:
+  assets:
+    enabled: true
+  fonts:
+    enabled: true
+  integrations:
+    flutter_svg: true
+
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+
+
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/nunito/Nunito-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/nunito/Nunito-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/nunito/Nunito-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/nunito/Nunito-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/nunito/Nunito-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/nunito/Nunito-Light.ttf
+          weight: 300
+        - asset: assets/fonts/nunito/Nunito-ExtraLight.ttf
+          weight: 200
